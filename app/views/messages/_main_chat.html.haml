@@ -1,0 +1,55 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__left
+      .main__group-name
+        グループ名
+      .main__member-name
+        メンバー名
+    .chat-main__right
+      = link_to "Edit", '#'
+  .chat-main__message-list
+    .message-box
+      .message-box__upper-row
+        .upper-row__name
+          さいとうまさ
+        .upper-row__day
+          2020-12-12
+      .message-box__lower-row
+        我が名は斎藤
+    .message-box
+      .message-box__upper-row
+        .upper-row__name
+          さいとうまさ
+        .upper-row__day
+          2020-12-12
+      .message-box__lower-row
+        我が名は斎藤
+    .message-box
+      .message-box__upper-row
+        .upper-row__name
+          さいとうまさ
+        .upper-row__day
+          2020-12-12
+      .message-box__lower-row
+        我が名は斎藤
+    .message-box
+      .message-box__upper-row
+        .upper-row__name
+          さいとうまさ
+        .upper-row__day
+          2020-12-12
+      .message-box__lower-row
+        我が名は斎藤
+  .chat-main__message-form
+    .message-form__left
+      <form class="new-message" action="" method="post">
+      .text-box
+        <input type="text" id="" name="">
+        .image-box
+          <label for="image">
+          = icon('far', 'image')
+          <input type="file" id="image">
+          </label>
+    .message-form__right
+      <button type="submit" id="send">Send</button>
+    </form>

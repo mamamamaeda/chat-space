@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration-line: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+  
+.wrapper{
+  height: 100vw;
+  display: flex;
+}
+
+// 変数で色指定
+$WhiteColor: #ffffff;
+$lightBlueColor: #38aef0;
+
+
+//  左サイドバー 上部
+.side-bar{
+  color: $WhiteColor;
+  background-color: #253141;
+  font-weight: bold;
+  width: 300px;
+}
+
+.side-bar__user-name{
+  background-color: #253141;
+  height: 100px;
+  display: flex;
+  align-items: center;
+
+}
+
+.side-bar__user-name__top-items{
+
+width: 260px;
+margin: 0 20px;
+line-height: 20px;
+display: flex;
+justify-content: space-between;
+}
+
+.top-item__icons{
+width: 60px;
+display: flex;
+justify-content: flex-end;
+}
+
+.contents__btn{
+color: $WhiteColor;
+}
+
+.contents__btn--setting{
+color: $WhiteColor;
+margin-left: 5px;
+}
+
+
+//  左サイドバー下部
+.side-bar__group-list{
+background-color: #2f3e51;
+height: calc(100vw - 100px);
+}
+
+.group__block{
+  color: $WhiteColor;
+  font-weight: bold;
+  padding: 20px 20px 40px 20px;
+}
+
+.group__name{
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.group__message{
+  font-size: 11px;
+}
+
+
+// 右チャットメインコンテンツ
+
+.chat-main{
+  width: calc(100vw - 300px);
+}
+
+// 右コンテンツ１段目
+.chat-main__group-info{
+  background-color: $WhiteColor;
+  height: 100px;
+  padding: 0px 40px;
+  border-bottom: 1px solid;
+  border-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-main__left{
+}
+
+.main__group-name{
+  color: #333333;
+  font-size: 20px;
+  margin: 35px 0 15px 0;
+}
+
+.main__member-name{
+  color: #999999;
+  font-size: 12px;
+}
+
+.chat-main__right{
+  color: $lightBlueColor;
+  font-size: 16px;
+  height: 40px;
+  width: 72px;
+  line-height: 40px;
+  border: 1px solid;
+  margin: 28px 0px 32px 0px;
+  padding: 0 20px 0 20px;
+}
+
+.chat-main__right a{
+  color: $lightBlueColor;
+}
+
+
+// 右コンテンツ２段目
+.chat-main__message-list{
+  background-color: #fafafa;
+  height: calc(100vw - 100px - 90px)
+}
+
+.message-box{
+  padding: 35px 0 46px 40px;
+}
+
+.message-box__upper-row{
+  display: flex;
+  justify-self: flex-start;
+}
+
+.upper-row__name{
+  color: #333333;
+  font-size: 16px;
+}
+
+.upper-row__day{
+  color: #999999;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.message-box__lower-row{
+  color: #434A54;
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+
+// 右コンテンツ３段目
+.chat-main__message-form{
+  background-color: #d2d2d2;
+  height: 90px;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.message-form__left{
+  height: 50px;
+  width: calc(100vw - 40px - 15px - 100px - 40px);
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.new-message{
+  width: 100%;
+}
+
+input{
+  width: 100%;
+  height: 50px
+}
+
+.text-box{
+  position: relative;
+}
+
+.image-box{
+  font-size: 2em;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  z-index: 2;
+}
+
+#image{
+  display: none;
+  
+}
+
+.image-box{
+  .contents__btn{
+    color: black;
+  } 
+}
+
+.message-form__right {
+  text-align: center;
+  background-color: $lightBlueColor;
+}
+
+#send{
+  color: $WhiteColor;
+  background-color: $lightBlueColor;
+  font-size: 16px;
+  border-style: none;
+  line-height: 50px;
+  width: 100px;
+  padding: 0 20px;
+}
