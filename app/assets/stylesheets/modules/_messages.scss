@@ -27,23 +27,19 @@ $lightBlueColor: #38aef0;
   background-color: #253141;
   font-weight: bold;
   width: 300px;
-}
-
-.side-bar__user-name{
-  background-color: #253141;
-  height: 100px;
-  display: flex;
-  align-items: center;
-
-}
-
-.side-bar__user-name__top-items{
-
-width: 260px;
-margin: 0 20px;
-line-height: 20px;
-display: flex;
-justify-content: space-between;
+  &__user-name{
+    background-color: #253141;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    &__top-items{
+      width: 260px;
+      margin: 0 20px;
+      line-height: 20px;
+      display: flex;
+      justify-content: space-between;
+      }
+  }
 }
 
 .top-item__icons{
@@ -53,12 +49,11 @@ justify-content: flex-end;
 }
 
 .contents__btn{
-color: $WhiteColor;
-}
-
-.contents__btn--setting{
-color: $WhiteColor;
-margin-left: 5px;
+  color: $WhiteColor;
+  &--setting{
+    color: $WhiteColor;
+    margin-left: 5px;
+  }
 }
 
 
@@ -85,7 +80,6 @@ height: calc(100vw - 100px);
 
 
 // 右チャットメインコンテンツ
-
 .chat-main{
   width: calc(100vw - 300px);
 }
@@ -101,7 +95,7 @@ height: calc(100vw - 100px);
   justify-content: space-between;
 }
 
-.chat-main__left{
+.group-info__left{
 }
 
 .main__group-name{
@@ -115,7 +109,7 @@ height: calc(100vw - 100px);
   font-size: 12px;
 }
 
-.chat-main__right{
+.group-info__right{
   color: $lightBlueColor;
   font-size: 16px;
   height: 40px;
@@ -126,7 +120,7 @@ height: calc(100vw - 100px);
   padding: 0 20px 0 20px;
 }
 
-.chat-main__right a{
+.group-info__right a{
   color: $lightBlueColor;
 }
 
@@ -139,11 +133,15 @@ height: calc(100vw - 100px);
 
 .message-box{
   padding: 35px 0 46px 40px;
-}
-
-.message-box__upper-row{
-  display: flex;
-  justify-self: flex-start;
+  &__upper-row{
+    display: flex;
+    justify-self: flex-start;
+  }
+  &__lower-row{
+    color: #434A54;
+    font-size: 14px;
+    margin-top: 14px;
+  }
 }
 
 .upper-row__name{
@@ -155,12 +153,6 @@ height: calc(100vw - 100px);
   color: #999999;
   font-size: 12px;
   margin-left: 10px;
-}
-
-.message-box__lower-row{
-  color: #434A54;
-  font-size: 14px;
-  margin-top: 14px;
 }
 
 
@@ -194,6 +186,10 @@ input{
   position: relative;
 }
 
+.text-box input{
+  padding-left: 10px;
+}
+
 .image-box{
   font-size: 2em;
   position: absolute;
@@ -204,13 +200,6 @@ input{
 
 #image{
   display: none;
-  
-}
-
-.image-box{
-  .contents__btn{
-    color: black;
-  } 
 }
 
 .message-form__right {
