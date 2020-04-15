@@ -12,23 +12,9 @@
     .group__block
       - current_user.groups.each do |group|
         .group
-          = link_to "#" do
+          = link_to group_messages_path(group) do
             .group__name
               =group.name
-            .group__massage
-              まだノーメッセージ   
-    .group__block
-      .group__name
-        techcamp
-      .group__message
-        まだメッセージがありまへん
-    .group__block
-      .group__name
-        techcamp
-      .group__message
-        まだメッセージがありまへん
-    .group__block
-      .group__name
-        techcamp
-      .group__message
-        まだメッセージがありまへん                
+            .group__message
+              = group.show_last_message  
+               
