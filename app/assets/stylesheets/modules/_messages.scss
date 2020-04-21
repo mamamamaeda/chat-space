@@ -61,6 +61,7 @@ justify-content: flex-end;
 .side-bar__group-list{
 background-color: #2f3e51;
 height: calc(100vw - 100px);
+overflow: scroll;
 }
 
 .group__block{
