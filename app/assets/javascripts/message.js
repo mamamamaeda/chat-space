@@ -53,9 +53,9 @@ $(function(){
     })
      .done(function(data){
        var html = buildHTML(data);
-       $('.messages').append(html);
+       $('.chat-main__message-list').append(html);
        $('form')[0].reset();
-       $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
+       $('.chat-main__message-list').animate({ scrollTop: $('.chat-main__message-list')[0].scrollHeight});
        $("#send").prop("disabled", false);
       })
       .fail(function() {
@@ -83,8 +83,8 @@ $(function(){
         insertHTML += buildHTML(message)
       });
       //メッセージが入ったHTMLに、入れ物ごと追加
-      $('.messages').append(insertHTML);
-      $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
+      $('.chat-main__message-list').append(insertHTML);
+      $('.chat-main__message-list').animate({ scrollTop: $('.chat-main__message-list')[0].scrollHeight});
     }
     })
     .fail(function() {
