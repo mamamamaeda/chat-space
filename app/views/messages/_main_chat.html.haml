@@ -5,6 +5,7 @@
         = @group[:name]
       .main__member-name
         - @group.users.each do |user|
+          Member :
           %span.main__member-name #{user.name} 
     .group-info__right
       = link_to "Edit", edit_group_path(@group)
